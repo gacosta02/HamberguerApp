@@ -1,8 +1,8 @@
 Create DataBase HamBerguerApp
 
 Create Table Burgers(
-varchar(100) Picture,
-varchar(20) Name,
+Varchar(100) Picture,
+Varchar(20) Name,
 Varchar(200) Descripcion,
 Varchar (50) Rating,
 Varchar (100) RatingDetail,
