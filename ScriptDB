@@ -1,11 +1,12 @@
 Create DataBase HamBurguerApp
 
 Create Table Burgers(
-Varchar(100) Picture,
-Varchar(20) Name,
-Varchar(200) Descripcion,
-Varchar (50) Rating,
-Varchar (100) RatingDetail,
-Varchar (20)Like
+integer Id Primarykey,
+Picture Varchar(100),
+Name Varchar(20),
+Descripcion Varchar(200) ,
+Rating Varchar (50) ,
+RatingDetail Varchar (100) ,
+Like Varchar (20)
 
 )
