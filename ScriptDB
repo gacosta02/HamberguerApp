@@ -11,6 +11,10 @@ Like Varchar (20)
 
 )
 Create Table Usuarios (
-
+Id integer Primarykey,
+Nombre Varchar(20),
+Direccion Varchar(200),
+Celular Varchar(15) ,
+IDTarjetaCredito integer
 
 )
