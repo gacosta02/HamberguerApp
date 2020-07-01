@@ -1,0 +1,19 @@
+create database hamburguerapp
+
+use hamburguerapp
+
+Create Table Usuarios (
+Id int primary key,
+Nombre varchar(20),
+Direccion varchar(200),
+Celular varchar(15),
+IdTarjetaCredito int) GO
+
+Create Table Burgers(
+Id int primary key,
+Picture varchar(200),
+Name varchar(20),
+Descripcion varchar(200),
+Raiting varchar (40),
+RaitingDetail varchar(40),
+Likes varchar (40) )
