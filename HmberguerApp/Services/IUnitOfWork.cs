@@ -9,7 +9,7 @@ namespace HmberguerApp.Services
    public interface IUnitOfWork
     {
         IRepository<Usuarios> Usuarios { get; }
-        IRepository<Burgers> Contactos { get; }
+        IRepository<Burgers> Burguer { get; }
         void Save();
     }
 }

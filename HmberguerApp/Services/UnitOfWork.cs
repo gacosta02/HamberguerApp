@@ -11,7 +11,7 @@ namespace HmberguerApp.Services
     {
         private DataContext _dbContext;
         private BaseRepository<Usuarios> _usuario;
-        private BaseRepository<Burgers> _contacto;
+        private BaseRepository<Burgers> _burguers;
 
         public UnitOfWork(DataContext dbContext)
         {
@@ -27,12 +27,12 @@ namespace HmberguerApp.Services
             }
         }
 
-        public IRepository<Burgers> Contactos
+        public IRepository<Burgers> Burguer
         {
             get
             {
-                return _contacto ??
-               (_contacto = new BaseRepository<Burgers>(_dbContext));
+                return _burguers ??
+               (_burguers = new BaseRepository<Burgers>(_dbContext));
 
             }
         }
