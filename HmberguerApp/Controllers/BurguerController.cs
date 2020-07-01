@@ -17,6 +17,12 @@ namespace HmberguerApp.Controllers
     {
         private DataContext dbContext = new DataContext();
         private UnitOfWork unitOfWork = new UnitOfWork(new DataContext());
+
+        public BurguerController(DataContext dbContext, UnitOfWork unitOfWork)
+        {
+            this.unitOfWork = unitOfWork;
+            this.dbContext = dbContext;
+        }
         [HttpGet]
         public IActionResult GetAllUser()
         {

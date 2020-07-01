@@ -9,8 +9,8 @@ namespace HmberguerApp.Entities
 {
     public class BaseRepository<TEntity>: IRepository<TEntity> where TEntity : class
     {
-        internal DataContext context;
-        internal DbSet<TEntity> dbSet;
+        private DataContext context;
+        private DbSet<TEntity> dbSet;
 
         public BaseRepository(DataContext context)
         {

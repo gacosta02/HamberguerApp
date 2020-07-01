@@ -29,7 +29,7 @@ namespace HmberguerApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<DataContext>(Options =>
-             Options.UseSqlServer(Configuration.GetConnectionString("Data")));
+             Options.UseSqlServer(Configuration.GetConnectionString("HamberguerApp")));
 
             services.AddControllers();
         }
