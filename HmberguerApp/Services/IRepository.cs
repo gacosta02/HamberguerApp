@@ -7,6 +7,8 @@ namespace HmberguerApp.Entities
 {
     public interface IRepository<TEntity> where TEntity : class
     {
+        void Insert(TEntity entity);
+        void Update(TEntity entityToUpdate);
         void Delete(TEntity entityToDelete);
         void Delete(object id);
         IEnumerable<TEntity> Get(
@@ -14,9 +16,7 @@ namespace HmberguerApp.Entities
             Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null,
             string includeProperties = "");
         TEntity GetByID(object id);
-        // IEnumerable<TEntity> GetWithRawSql(string query, 
-        //     params object[] parameters);
-        void Insert(TEntity entity);
-        void Update(TEntity entityToUpdate);
+        
+       
     }
 }
